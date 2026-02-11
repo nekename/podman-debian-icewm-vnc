@@ -1,0 +1,4 @@
+prog alacritty /usr/share/icons/hicolor/scalable/apps/Alacritty.svg alacritty
+separator
+prog Firefox /usr/lib/firefox-esr/browser/chrome/icons/default/default128.png firefox
+prog Chromium /usr/share/pixmaps/chromium.png /usr/bin/chromium
