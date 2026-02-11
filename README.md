@@ -9,11 +9,21 @@ This repository contains a Podman Debian container image with an IceWM VNC envir
   * Mozilla Firefox
   * Chromium
 
+## Changes from upstream
+
+- Removed all Rocky Linux and XFCE images to focus on Debian and IceWM
+- Updated base image from Debian Bookworm (12) to Debian Trixie (13)
+- Switched to installing all software from the Debian repositories, streamlining the build process, keeping up to date and fixing architecture errors
+- Fixed issues with missing icons in the IceWM menus and changed the default IceWM theme to `motif` from `win95`
+- Replaced xterm with alacritty for a more modern terminal experience
+- Added a compose.yaml file for easier container management
+- Removed extraneous code and dependencies and replaced vim with nano
+
 ## Usage
 
 1. Install podman and podman-compose, then `git clone` this repository
 2. Run `podman-compose up` to build and start the container
-3. Access the noVNC client via `http://localhost:6901/vnc.html` in your web browser
+3. Access the noVNC client via http://localhost:6901/vnc.html in your web browser
 
 ## Contributors
 
