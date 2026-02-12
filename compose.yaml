@@ -5,8 +5,14 @@ services:
       - 5901:5901
       - 6901:6901
     environment:
-      # - VNC_COL_DEPTH=24
-      # - VNC_RESOLUTION=1280x1024
-      # - VNC_PASSWORD=vncpassword
-      # - VNC_PASSWORDLESS=false
+      #- VNC_COL_DEPTH=24
+      #- VNC_RESOLUTION=1280x1024
+      #- VNC_PASSWORD=vncpassword
+      #- VNC_PASSWORDLESS=false
     shm_size: 512mb
+    # Uncomment `volumes` sections to persist data in the container's home directory
+    #volumes:
+      #- mount:/headless/
+
+#volumes:
+#  mount:

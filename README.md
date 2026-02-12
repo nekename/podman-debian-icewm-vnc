@@ -17,6 +17,7 @@ This repository contains a Podman Debian container image with an IceWM VNC envir
 - Fixed issues with missing icons in the IceWM menus and changed the default IceWM theme to `motif` from `win95`
 - Replaced xterm with alacritty for a more modern terminal experience
 - Added a compose.yaml file for easier container management
+- Added an optional volume mount to persist data in the container's home directory
 - Removed extraneous code and dependencies and replaced vim with nano
 
 ## Usage
@@ -24,6 +25,10 @@ This repository contains a Podman Debian container image with an IceWM VNC envir
 1. Install podman and podman-compose, then `git clone` this repository
 2. Run `podman-compose up` to build and start the container
 3. Access the noVNC client via http://localhost:6901/vnc.html in your web browser
+
+## Configuration
+
+Open and edit the compose.yaml file and uncomment the option(s) you wish to change, then use `podman-compose down` and `podman-compose up` to apply the changes.
 
 ## Contributors
 
