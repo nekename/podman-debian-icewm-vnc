@@ -3,6 +3,5 @@ set -e
 
 echo "Installing TigerVNC server..."
 apt-get install -y tigervnc-standalone-server
-apt-get clean -y
 printf '$localhost = "no";\n1;\n' >>/etc/tigervnc/vncserver-config-defaults
 echo "Successfully installed TigerVNC server"

@@ -23,6 +23,7 @@ ADD ./src/common/home $HOME
 ADD ./src/common/startup $STARTUP_DIR
 
 RUN $INSTALL_DIR/update.sh
+
 RUN $INSTALL_DIR/tools.sh
 
 RUN $INSTALL_DIR/icewm.sh
@@ -32,6 +33,8 @@ RUN $INSTALL_DIR/chromium.sh
 
 RUN $INSTALL_DIR/tigervnc.sh
 RUN $INSTALL_DIR/novnc.sh
+
+RUN $INSTALL_DIR/clean.sh
 
 RUN $INSTALL_DIR/set_user_permission.sh $STARTUP_DIR $HOME
 USER 1000
